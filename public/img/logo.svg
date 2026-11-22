@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Hard Shadow -->
+  <rect x="14" y="14" width="96" height="96" rx="18" fill="#0F172A" />
+  
+  <!-- Outer Badge Body -->
+  <rect x="10" y="10" width="96" height="96" rx="18" fill="#FACC15" stroke="#0F172A" stroke-width="4.5" stroke-linejoin="round" />
+  
+  <!-- Inner Contrast Accent Box -->
+  <rect x="18" y="18" width="80" height="80" rx="12" fill="#FFFFFF" stroke="#0F172A" stroke-width="3" />
+
+  <!-- Diagonal Color Split / Accent Element -->
+  <path d="M18 64 L70 18 L98 18 L18 98 Z" fill="#22C55E" opacity="0.35" />
+
+  <!-- Dynamic Lightning Bolt & Arrow Hybrid Symbol -->
+  <!-- Shadow of symbol -->
+  <path d="M62 26 L40 60 L54 60 L44 94 L76 54 L60 54 Z" fill="#0F172A" transform="translate(3, 3)" />
+  <!-- Main Symbol Body -->
+  <path d="M62 26 L40 60 L54 60 L44 94 L76 54 L60 54 Z" fill="#FACC15" stroke="#0F172A" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" />
+
+  <!-- Media Download Arrow Accent inside Bolt -->
+  <path d="M57 66 L67 76 L77 66" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="67" y1="56" x2="67" y2="75" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Spark Dot -->
+  <circle cx="82" cy="34" r="4.5" fill="#22C55E" stroke="#0F172A" stroke-width="2.5" />
+</svg>

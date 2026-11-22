@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Refined Eye-Friendly Neo-Brutalism Design System
+   Palette: Clean Off-White (#F8FAFC), Jet Black (#0F172A), 
+   Accents: Warm Yellow (#FACC15 / #FFE600), Vibrant Green (#22C55E), White (#FFFFFF)
+   ========================================================================== */
+
+:root {
+  --brutal-black: #0F172A;
+  --brutal-yellow: #FACC15;
+  --brutal-green: #22C55E;
+  --brutal-bg: #F8FAFC;
+}
+
+body {
+  background-color: var(--brutal-bg);
+  color: var(--brutal-black);
+}
+
+/* Subtle, Calm Grid Background (Easy on the eyes) */
+.brutal-bg-pattern {
+  background-color: #F8FAFC;
+  background-image: radial-gradient(#CBD5E1 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+/* Eye-Friendly Neo-Brutalist Cards */
+.brutal-card {
+  background-color: #FFFFFF;
+  border: 2.5px solid var(--brutal-black);
+  box-shadow: 4px 4px 0px 0px var(--brutal-black);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brutal-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px 0px var(--brutal-black);
+}
+
+.brutal-card-static {
+  background-color: #FFFFFF;
+  border: 2.5px solid var(--brutal-black);
+  box-shadow: 4px 4px 0px 0px var(--brutal-black);
+}
+
+/* Refined Badges */
+.brutal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border: 2px solid var(--brutal-black);
+  box-shadow: 2.5px 2.5px 0px 0px var(--brutal-black);
+  font-weight: 800;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+/* Tactile Buttons */
+.brutal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2.5px solid var(--brutal-black);
+  box-shadow: 4px 4px 0px 0px var(--brutal-black);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.brutal-btn:hover {
+  transform: translate(-1.5px, -1.5px);
+  box-shadow: 6px 6px 0px 0px var(--brutal-black);
+}
+
+.brutal-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px var(--brutal-black);
+}
+
+/* Ticker Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+  border-left: 2px solid var(--brutal-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brutal-black);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brutal-green);
+}
