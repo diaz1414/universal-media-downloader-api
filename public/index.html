@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diaww Media API & Downloader - Free Universal Media Downloader REST API & Docs</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
+
   <!-- Google Fonts: Space Grotesk & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -44,13 +47,20 @@
   <!-- Refined Eye-Friendly Neo-Brutalism CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="brutal-bg-pattern text-[#0F172A] min-h-screen selection:bg-[#FACC15] selection:text-[#0F172A] font-sans antialiased overflow-x-hidden">
+
+<body
+  class="brutal-bg-pattern text-[#0F172A] min-h-screen selection:bg-[#FACC15] selection:text-[#0F172A] font-sans antialiased overflow-x-hidden">
 
   <!-- Top Marquee Ticker -->
-  <div class="bg-white border-b-2 border-[#0F172A] overflow-hidden py-2 font-mono text-xs sm:text-sm font-bold tracking-wider select-none">
+  <div
+    class="bg-white border-b-2 border-[#0F172A] overflow-hidden py-2 font-mono text-xs sm:text-sm font-bold tracking-wider select-none">
     <div class="animate-marquee whitespace-nowrap flex gap-4">
-      <span data-i18n="marquee_text">⚡ 100% GRATIS & OPEN SOURCE API • 18+ PLATFORM DIDUKUNG • TANPA BATASAN RATE LIMIT UNTUK DEV • TIKTOK • INSTAGRAM • YOUTUBE • TWITTER/X • FACEBOOK • SPOTIFY • PINTEREST • THREADS • REDDIT • CAPCUT • DIBUAT DENGAN SEMANGAT OLEH DIAWW • </span>
-      <span data-i18n="marquee_text">⚡ 100% GRATIS & OPEN SOURCE API • 18+ PLATFORM DIDUKUNG • TANPA BATASAN RATE LIMIT UNTUK DEV • TIKTOK • INSTAGRAM • YOUTUBE • TWITTER/X • FACEBOOK • SPOTIFY • PINTEREST • THREADS • REDDIT • CAPCUT • DIBUAT DENGAN SEMANGAT OLEH DIAWW • </span>
+      <span data-i18n="marquee_text">⚡ 100% GRATIS & OPEN SOURCE API • 18+ PLATFORM DIDUKUNG • TANPA BATASAN RATE LIMIT
+        UNTUK DEV • TIKTOK • INSTAGRAM • YOUTUBE • TWITTER/X • FACEBOOK • SPOTIFY • PINTEREST • THREADS • REDDIT •
+        CAPCUT • DIBUAT DENGAN SEMANGAT OLEH DIAWW • </span>
+      <span data-i18n="marquee_text">⚡ 100% GRATIS & OPEN SOURCE API • 18+ PLATFORM DIDUKUNG • TANPA BATASAN RATE LIMIT
+        UNTUK DEV • TIKTOK • INSTAGRAM • YOUTUBE • TWITTER/X • FACEBOOK • SPOTIFY • PINTEREST • THREADS • REDDIT •
+        CAPCUT • DIBUAT DENGAN SEMANGAT OLEH DIAWW • </span>
     </div>
   </div>
 
@@ -58,15 +68,17 @@
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-[#0F172A]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        
+
         <!-- Brand Logo -->
         <a href="#" class="flex items-center gap-3 group">
-          <div class="w-11 h-11 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] rounded-lg overflow-hidden bg-[#FACC15] p-0.5 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform">
+          <div
+            class="w-11 h-11 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] rounded-lg overflow-hidden bg-[#FACC15] p-0.5 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform">
             <img src="/img/logo.svg" alt="Diaww Logo" class="w-full h-full object-contain">
           </div>
           <div class="flex flex-col">
             <span class="font-black text-xl tracking-tighter uppercase leading-none">
-              Diaww<span class="bg-[#22C55E] text-[#0F172A] px-1.5 py-0.5 ml-1 border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] text-xs font-mono">API</span>
+              Diaww<span
+                class="bg-[#22C55E] text-[#0F172A] px-1.5 py-0.5 ml-1 border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] text-xs font-mono">API</span>
             </span>
             <span class="text-[10px] font-mono font-bold text-slate-500 tracking-wider mt-0.5">MEDIA ENGINE v1.0</span>
           </div>
@@ -74,11 +86,21 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center gap-5 text-sm font-bold uppercase">
-          <a href="#home" class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all" data-i18n="nav_home">Beranda</a>
-          <a href="#features" class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all" data-i18n="nav_features">Fitur</a>
-          <a href="#downloader" class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all" data-i18n="nav_downloader">Pengunduh Web</a>
-          <a href="#docs" class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all" data-i18n="nav_docs">Dokumentasi</a>
-          <a href="#donation" class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all" data-i18n="nav_donate">Donasi</a>
+          <a href="#home"
+            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            data-i18n="nav_home">Beranda</a>
+          <a href="#features"
+            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            data-i18n="nav_features">Fitur</a>
+          <a href="#downloader"
+            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            data-i18n="nav_downloader">Pengunduh Web</a>
+          <a href="#docs"
+            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            data-i18n="nav_docs">Dokumentasi</a>
+          <a href="#donation"
+            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            data-i18n="nav_donate">Donasi</a>
         </nav>
 
         <!-- Right Side CTA & Language Toggle -->
@@ -90,7 +112,8 @@
           </button>
 
           <!-- GitHub Source -->
-          <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0F172A] text-white hover:bg-slate-800 px-3.5 py-1.5 text-xs">
+          <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer"
+            class="brutal-btn bg-[#0F172A] text-white hover:bg-slate-800 px-3.5 py-1.5 text-xs">
             <i data-lucide="github" class="w-4 h-4 text-[#FACC15]"></i>
             <span>GitHub</span>
           </a>
@@ -98,7 +121,8 @@
 
         <!-- Mobile Hamburger Button -->
         <div class="flex items-center gap-2 md:hidden">
-          <button id="burger-btn" class="w-10 h-10 bg-[#FACC15] border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center justify-center font-bold text-[#0F172A] focus:outline-none">
+          <button id="burger-btn"
+            class="w-10 h-10 bg-[#FACC15] border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center justify-center font-bold text-[#0F172A] focus:outline-none">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -108,18 +132,30 @@
     <!-- Mobile Drawer Menu (Neo-Brutalist) -->
     <div id="mobile-menu" class="hidden md:hidden border-t-2 border-[#0F172A] bg-white p-5 space-y-3 shadow-lg">
       <nav class="flex flex-col space-y-2.5 font-bold uppercase text-base">
-        <a href="#home" class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1" data-i18n="nav_home">Beranda</a>
-        <a href="#features" class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1" data-i18n="nav_features">Fitur</a>
-        <a href="#downloader" class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1" data-i18n="nav_downloader">Pengunduh Web</a>
-        <a href="#docs" class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1" data-i18n="nav_docs">Dokumentasi</a>
-        <a href="#donation" class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1" data-i18n="nav_donate">Donasi</a>
+        <a href="#home"
+          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          data-i18n="nav_home">Beranda</a>
+        <a href="#features"
+          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          data-i18n="nav_features">Fitur</a>
+        <a href="#downloader"
+          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          data-i18n="nav_downloader">Pengunduh Web</a>
+        <a href="#docs"
+          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          data-i18n="nav_docs">Dokumentasi</a>
+        <a href="#donation"
+          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          data-i18n="nav_donate">Donasi</a>
       </nav>
       <div class="pt-3 border-t-2 border-slate-200 flex items-center justify-between gap-3">
-        <button onclick="document.getElementById('lang-btn').click()" class="brutal-btn bg-[#FACC15] w-full py-2.5 text-xs">
+        <button onclick="document.getElementById('lang-btn').click()"
+          class="brutal-btn bg-[#FACC15] w-full py-2.5 text-xs">
           <i data-lucide="languages" class="w-4 h-4"></i>
           <span data-i18n="nav_switch_lang">Ganti Bahasa</span>
         </button>
-        <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0F172A] text-white w-full py-2.5 text-xs">
+        <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer"
+          class="brutal-btn bg-[#0F172A] text-white w-full py-2.5 text-xs">
           <i data-lucide="github" class="w-4 h-4 text-[#FACC15]"></i>
           <span>GitHub</span>
         </a>
@@ -131,7 +167,7 @@
     <!-- Hero Section -->
     <section id="home" class="pt-12 pb-16 sm:pt-20 sm:pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-4xl mx-auto">
-        
+
         <!-- Brutalist Badge Tag -->
         <div class="inline-block mb-5">
           <span class="brutal-badge bg-[#22C55E]/20 text-[#15803D] px-3.5 py-1 text-xs sm:text-sm">
@@ -143,74 +179,94 @@
         <!-- Big Brutal Typography -->
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.1]">
           <span data-i18n="hero_title">Unduh Media Sosial Tanpa Batas dengan</span>
-          <span class="bg-[#FACC15] px-2.5 py-0.5 border-2 border-[#0F172A] shadow-[3.5px_3.5px_0px_0px_#0F172A] inline-block mt-2">
+          <span
+            class="bg-[#FACC15] px-2.5 py-0.5 border-2 border-[#0F172A] shadow-[3.5px_3.5px_0px_0px_#0F172A] inline-block mt-2">
             Diaww API
           </span>
         </h1>
 
         <!-- Subtitle -->
-        <p class="mt-6 text-sm sm:text-lg font-medium text-slate-600 max-w-2xl mx-auto leading-relaxed" data-i18n="hero_subtitle">
-          Alat pengunduh web instan dan REST API gratis untuk mengambil media video, audio, dan gambar dari 18+ platform media sosial populer dalam satu wadah praktis.
+        <p class="mt-6 text-sm sm:text-lg font-medium text-slate-600 max-w-2xl mx-auto leading-relaxed"
+          data-i18n="hero_subtitle">
+          Alat pengunduh web instan dan REST API gratis untuk mengambil media video, audio, dan gambar dari 18+ platform
+          media sosial populer dalam satu wadah praktis.
         </p>
 
         <!-- Platform Stickers Grid -->
-        <div class="mt-8 flex flex-wrap justify-center items-center gap-2 font-mono text-xs font-bold max-w-3xl mx-auto">
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+        <div
+          class="mt-8 flex flex-wrap justify-center items-center gap-2 font-mono text-xs font-bold max-w-3xl mx-auto">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="video" class="w-3.5 h-3.5 text-pink-500"></i> TikTok
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="instagram" class="w-3.5 h-3.5 text-rose-500"></i> Instagram
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="youtube" class="w-3.5 h-3.5 text-red-500"></i> YouTube
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="twitter" class="w-3.5 h-3.5 text-sky-500"></i> Twitter / X
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="facebook" class="w-3.5 h-3.5 text-blue-600"></i> Facebook
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="music" class="w-3.5 h-3.5 text-emerald-500"></i> Spotify
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="image" class="w-3.5 h-3.5 text-red-600"></i> Pinterest
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="message-square" class="w-3.5 h-3.5 text-violet-500"></i> Threads
           </span>
-          <span class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
+          <span
+            class="bg-white px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5">
             <i data-lucide="scissors" class="w-3.5 h-3.5"></i> CapCut
           </span>
-          <span class="bg-[#FACC15] px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5" data-i18n="tag_more">
+          <span
+            class="bg-[#FACC15] px-2.5 py-1 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center gap-1.5"
+            data-i18n="tag_more">
             +7 LAINNYA
           </span>
         </div>
 
         <!-- Action Buttons -->
         <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#downloader" class="brutal-btn bg-[#22C55E] hover:bg-[#16a34a] text-[#0F172A] w-full sm:w-auto px-7 py-3.5 text-sm">
+          <a href="#downloader"
+            class="brutal-btn bg-[#22C55E] hover:bg-[#16a34a] text-[#0F172A] w-full sm:w-auto px-7 py-3.5 text-sm">
             <i data-lucide="download-cloud" class="w-4 h-4"></i>
             <span data-i18n="hero_btn_test">Mulai Unduh Media</span>
           </a>
-          <a href="#docs" class="brutal-btn bg-[#FACC15] hover:bg-yellow-300 text-[#0F172A] w-full sm:w-auto px-7 py-3.5 text-sm">
+          <a href="#docs"
+            class="brutal-btn bg-[#FACC15] hover:bg-yellow-300 text-[#0F172A] w-full sm:w-auto px-7 py-3.5 text-sm">
             <i data-lucide="book-open" class="w-4 h-4"></i>
             <span data-i18n="hero_btn_docs">Lihat Dokumentasi</span>
           </a>
         </div>
 
         <!-- Key Metrics Brutalist Box -->
-        <div class="mt-12 brutal-card bg-white p-5 max-w-2xl mx-auto grid grid-cols-3 divide-x-2 divide-slate-200 text-center font-mono">
+        <div
+          class="mt-12 brutal-card bg-white p-5 max-w-2xl mx-auto grid grid-cols-3 divide-x-2 divide-slate-200 text-center font-mono">
           <div>
             <div class="text-2xl sm:text-3xl font-black text-[#0F172A]">99.9%</div>
             <div class="text-xs font-bold text-slate-500 uppercase mt-1" data-i18n="stat_uptime">Uptime 99.9%</div>
           </div>
           <div>
             <div class="text-2xl sm:text-3xl font-black text-[#15803D]">18+</div>
-            <div class="text-xs font-bold text-slate-500 uppercase mt-1" data-i18n="stat_platforms">18+ Platform Aktif</div>
+            <div class="text-xs font-bold text-slate-500 uppercase mt-1" data-i18n="stat_platforms">18+ Platform Aktif
+            </div>
           </div>
           <div>
-            <div class="text-2xl sm:text-3xl font-black bg-[#FACC15] px-1.5 inline-block border border-[#0F172A]">FREE</div>
+            <div class="text-2xl sm:text-3xl font-black bg-[#FACC15] px-1.5 inline-block border border-[#0F172A]">FREE
+            </div>
             <div class="text-xs font-bold text-slate-500 uppercase mt-1" data-i18n="stat_free">Gratis Selamanya</div>
           </div>
         </div>
@@ -221,10 +277,12 @@
     <!-- Web Downloader & Live API Section -->
     <section id="downloader" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="brutal-card-static bg-white p-6 sm:p-8">
-        
+
         <div class="max-w-3xl mx-auto text-center mb-7">
-          <span class="brutal-badge bg-[#FACC15] px-3 py-1 text-xs mb-2" data-i18n="tester_badge">WEB DOWNLOADER & API TESTER</span>
-          <h2 class="text-2xl sm:text-3xl font-black uppercase" data-i18n="tester_title">Pusat Unduh Media & Live API</h2>
+          <span class="brutal-badge bg-[#FACC15] px-3 py-1 text-xs mb-2" data-i18n="tester_badge">WEB DOWNLOADER & API
+            TESTER</span>
+          <h2 class="text-2xl sm:text-3xl font-black uppercase" data-i18n="tester_title">Pusat Unduh Media & Live API
+          </h2>
           <p class="mt-1.5 text-slate-600 font-medium text-sm" data-i18n="tester_desc">
             Tempel tautan video/audio apa saja di bawah ini untuk langsung mengunduh file atau melihat respons API.
           </p>
@@ -233,16 +291,14 @@
         <!-- Input Form -->
         <form id="api-test-form" class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-2.5">
           <div class="relative flex-1">
-            <input 
-              type="text" 
-              id="test-url-input" 
-              placeholder="Tempel URL TikTok, Instagram, YouTube, X, atau Facebook..." 
+            <input type="text" id="test-url-input"
+              placeholder="Tempel URL TikTok, Instagram, YouTube, X, atau Facebook..."
               value="https://www.tiktok.com/@tiktok/video/7106594312292453675"
               data-i18n-placeholder="tester_input_placeholder"
-              class="w-full px-4 py-3.5 border-2 border-[#0F172A] bg-slate-50 font-mono text-sm font-bold text-[#0F172A] focus:outline-none focus:bg-white shadow-[2.5px_2.5px_0px_0px_#0F172A] transition-all"
-            >
+              class="w-full px-4 py-3.5 border-2 border-[#0F172A] bg-slate-50 font-mono text-sm font-bold text-[#0F172A] focus:outline-none focus:bg-white shadow-[2.5px_2.5px_0px_0px_#0F172A] transition-all">
           </div>
-          <button type="submit" class="brutal-btn bg-[#22C55E] text-[#0F172A] px-7 py-3.5 text-sm font-bold whitespace-nowrap">
+          <button type="submit"
+            class="brutal-btn bg-[#22C55E] text-[#0F172A] px-7 py-3.5 text-sm font-bold whitespace-nowrap">
             <i data-lucide="download" class="w-4 h-4"></i>
             <span data-i18n="tester_btn_send">Ambil Media</span>
           </button>
@@ -251,14 +307,18 @@
         <!-- View Switcher Tabs (Card vs JSON) -->
         <div class="max-w-3xl mx-auto mt-6 flex items-center justify-between border-b-2 border-slate-200 pb-2">
           <div class="flex items-center gap-2">
-            <button id="tab-view-card" class="px-3.5 py-1.5 text-xs font-mono font-bold bg-[#0F172A] text-[#FACC15] border border-[#0F172A] transition-all flex items-center gap-1.5">
+            <button id="tab-view-card"
+              class="px-3.5 py-1.5 text-xs font-mono font-bold bg-[#0F172A] text-[#FACC15] border border-[#0F172A] transition-all flex items-center gap-1.5">
               <span data-i18n="view_tab_card">🎬 Tampilan Unduh</span>
             </button>
-            <button id="tab-view-json" class="px-3.5 py-1.5 text-xs font-mono font-bold bg-white text-[#0F172A] border border-[#0F172A] hover:bg-slate-100 transition-all flex items-center gap-1.5">
+            <button id="tab-view-json"
+              class="px-3.5 py-1.5 text-xs font-mono font-bold bg-white text-[#0F172A] border border-[#0F172A] hover:bg-slate-100 transition-all flex items-center gap-1.5">
               <span data-i18n="view_tab_json">💻 Data JSON</span>
             </button>
           </div>
-          <div id="test-status-pill" class="bg-black text-[#FACC15] px-2.5 py-0.5 border border-slate-700 font-mono text-xs" data-i18n="tester_status_ready">
+          <div id="test-status-pill"
+            class="bg-black text-[#FACC15] px-2.5 py-0.5 border border-slate-700 font-mono text-xs"
+            data-i18n="tester_status_ready">
             STATUS: SIAP
           </div>
         </div>
@@ -268,10 +328,12 @@
           <div id="media-card-container" class="border-2 border-[#0F172A] bg-slate-50 shadow-[4px_4px_0px_0px_#0F172A]">
             <!-- Initial Empty State -->
             <div class="p-8 text-center text-slate-500 font-mono text-xs">
-              <div class="w-12 h-12 bg-white border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center mx-auto mb-3">
+              <div
+                class="w-12 h-12 bg-white border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center mx-auto mb-3">
                 <i data-lucide="sparkles" class="w-6 h-6 text-[#0F172A]"></i>
               </div>
-              <h4 class="font-bold text-sm text-[#0F172A] uppercase mb-1" data-i18n="card_empty_title">Belum Ada Media</h4>
+              <h4 class="font-bold text-sm text-[#0F172A] uppercase mb-1" data-i18n="card_empty_title">Belum Ada Media
+              </h4>
               <p class="max-w-md mx-auto text-slate-500 font-sans text-xs" data-i18n="card_empty_desc">
                 Tempel tautan video di atas dan klik tombol "Ambil Media" untuk memunculkan pratinjau dan opsi unduhan.
               </p>
@@ -280,16 +342,20 @@
         </div>
 
         <!-- 2. Raw JSON Terminal View Wrapper (Hidden by default, toggled via tab) -->
-        <div id="media-json-wrapper" class="max-w-3xl mx-auto mt-4 border-2 border-[#0F172A] shadow-[4px_4px_0px_0px_#0F172A] bg-[#0F172A] overflow-hidden hidden">
-          <div class="px-4 py-2 bg-slate-800 border-b-2 border-[#0F172A] flex items-center justify-between font-mono text-xs font-bold">
+        <div id="media-json-wrapper"
+          class="max-w-3xl mx-auto mt-4 border-2 border-[#0F172A] shadow-[4px_4px_0px_0px_#0F172A] bg-[#0F172A] overflow-hidden hidden">
+          <div
+            class="px-4 py-2 bg-slate-800 border-b-2 border-[#0F172A] flex items-center justify-between font-mono text-xs font-bold">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 bg-rose-500 rounded-full inline-block"></span>
               <span class="w-3 h-3 bg-amber-400 rounded-full inline-block"></span>
               <span class="w-3 h-3 bg-emerald-500 rounded-full inline-block"></span>
-              <span class="ml-2 uppercase text-slate-300 font-mono" data-i18n="tester_terminal_title">TERMINAL: API_RESPONSE.JSON</span>
+              <span class="ml-2 uppercase text-slate-300 font-mono" data-i18n="tester_terminal_title">TERMINAL:
+                API_RESPONSE.JSON</span>
             </div>
           </div>
-          <pre class="p-4 font-mono text-xs text-[#4ADE80] overflow-x-auto max-h-96 leading-relaxed selection:bg-[#FACC15] selection:text-black"><code id="test-json-result" data-initial="true">// Masukkan URL media di atas lalu klik "AMBIL MEDIA" untuk melihat respons JSON.</code></pre>
+          <pre
+            class="p-4 font-mono text-xs text-[#4ADE80] overflow-x-auto max-h-96 leading-relaxed selection:bg-[#FACC15] selection:text-black"><code id="test-json-result" data-initial="true">// Masukkan URL media di atas lalu klik "AMBIL MEDIA" untuk melihat respons JSON.</code></pre>
         </div>
 
       </div>
@@ -298,9 +364,10 @@
     <!-- Features Section -->
     <section id="features" class="py-16 border-t-2 border-[#0F172A] bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="brutal-badge bg-slate-100 text-[#0F172A] px-3 py-1 text-xs mb-2.5" data-i18n="feat_badge">FITUR UNGGULAN</span>
+          <span class="brutal-badge bg-slate-100 text-[#0F172A] px-3 py-1 text-xs mb-2.5" data-i18n="feat_badge">FITUR
+            UNGGULAN</span>
           <h2 class="text-2xl sm:text-4xl font-black uppercase" data-i18n="feat_title">Keunggulan Utama</h2>
           <p class="mt-2 text-slate-600 font-medium text-sm sm:text-base" data-i18n="feat_desc">
             Dirancang untuk pengguna harian dan developer modern dengan integrasi super cepat dan handal.
@@ -308,11 +375,12 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
+
           <!-- Feature 1 -->
           <div class="brutal-card bg-white p-6 sm:p-7 flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#FACC15] border-2 border-[#0F172A] shadow-[3px_3px_0px_0px_#0F172A] flex items-center justify-center font-black mb-5">
+              <div
+                class="w-12 h-12 bg-[#FACC15] border-2 border-[#0F172A] shadow-[3px_3px_0px_0px_#0F172A] flex items-center justify-center font-black mb-5">
                 <i data-lucide="zap" class="w-6 h-6 text-[#0F172A] fill-[#0F172A]"></i>
               </div>
               <h3 class="text-xl font-black uppercase mb-2" data-i18n="feat_1_title">Universal Downloader</h3>
@@ -320,7 +388,8 @@
                 Deteksi otomatis platform hanya dengan satu parameter URL tanpa perlu memilih platform secara manual.
               </p>
             </div>
-            <div class="mt-5 pt-3.5 border-t border-slate-200 font-mono text-xs font-bold text-slate-500" data-i18n="feat_1_footer">
+            <div class="mt-5 pt-3.5 border-t border-slate-200 font-mono text-xs font-bold text-slate-500"
+              data-i18n="feat_1_footer">
               ENDPOINT: /api/download?url=...
             </div>
           </div>
@@ -328,7 +397,8 @@
           <!-- Feature 2 -->
           <div class="brutal-card bg-white p-6 sm:p-7 flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#22C55E] border-2 border-[#0F172A] shadow-[3px_3px_0px_0px_#0F172A] flex items-center justify-center font-black mb-5">
+              <div
+                class="w-12 h-12 bg-[#22C55E] border-2 border-[#0F172A] shadow-[3px_3px_0px_0px_#0F172A] flex items-center justify-center font-black mb-5">
                 <i data-lucide="layers" class="w-6 h-6 text-[#0F172A]"></i>
               </div>
               <h3 class="text-xl font-black uppercase mb-2" data-i18n="feat_2_title">Multi Format & Kualitas</h3>
@@ -336,7 +406,8 @@
                 Menyediakan opsi resolusi tinggi HD, SD, hingga ekstraksi audio MP3 secara terpisah.
               </p>
             </div>
-            <div class="mt-5 pt-3.5 border-t border-slate-200 font-mono text-xs font-bold text-slate-500" data-i18n="feat_2_footer">
+            <div class="mt-5 pt-3.5 border-t border-slate-200 font-mono text-xs font-bold text-slate-500"
+              data-i18n="feat_2_footer">
               OUTPUT: MP4 (HD/SD) + MP3
             </div>
           </div>
@@ -344,15 +415,18 @@
           <!-- Feature 3 -->
           <div class="brutal-card bg-white p-6 sm:p-7 flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-white border-2 border-[#0F172A] shadow-[3px_3px_0px_0px_#0F172A] flex items-center justify-center font-black mb-5">
+              <div
+                class="w-12 h-12 bg-white border-2 border-[#0F172A] shadow-[3px_3px_0px_0px_#0F172A] flex items-center justify-center font-black mb-5">
                 <i data-lucide="gauge" class="w-6 h-6 text-[#0F172A]"></i>
               </div>
               <h3 class="text-xl font-black uppercase mb-2" data-i18n="feat_3_title">Performa Kilat</h3>
               <p class="text-slate-600 font-medium text-sm leading-relaxed" data-i18n="feat_3_desc">
-                Hasil unduhan instan dan respons format JSON yang ringan, clean, serta dioptimalkan untuk latensi rendah.
+                Hasil unduhan instan dan respons format JSON yang ringan, clean, serta dioptimalkan untuk latensi
+                rendah.
               </p>
             </div>
-            <div class="mt-5 pt-3.5 border-t border-slate-200 font-mono text-xs font-bold text-slate-500" data-i18n="feat_3_footer">
+            <div class="mt-5 pt-3.5 border-t border-slate-200 font-mono text-xs font-bold text-slate-500"
+              data-i18n="feat_3_footer">
               18+ DEDICATED CONTROLLERS
             </div>
           </div>
@@ -364,7 +438,7 @@
     <!-- API Documentation -->
     <section id="docs" class="py-16 border-t-2 border-[#0F172A] bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-2xl mx-auto mb-12">
           <span class="brutal-badge bg-white px-3 py-1 text-xs mb-2" data-i18n="docs_badge">PANDUAN INTEGRASI</span>
           <h2 class="text-2xl sm:text-4xl font-black uppercase" data-i18n="docs_title">Dokumentasi REST API</h2>
@@ -374,15 +448,18 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          
+
           <!-- Endpoints Left Column -->
           <div class="lg:col-span-7 space-y-5">
-            
+
             <!-- Universal Endpoint -->
             <div class="brutal-card-static bg-white p-5 sm:p-6">
               <div class="flex items-center justify-between mb-3">
-                <span class="bg-[#22C55E] border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] px-2.5 py-0.5 font-mono font-black text-xs">GET</span>
-                <span class="bg-slate-100 text-[#0F172A] px-2 py-0.5 border border-[#0F172A] font-mono text-[11px] font-bold uppercase" data-i18n="docs_universal_tag">SUPER UNIVERSAL</span>
+                <span
+                  class="bg-[#22C55E] border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] px-2.5 py-0.5 font-mono font-black text-xs">GET</span>
+                <span
+                  class="bg-slate-100 text-[#0F172A] px-2 py-0.5 border border-[#0F172A] font-mono text-[11px] font-bold uppercase"
+                  data-i18n="docs_universal_tag">SUPER UNIVERSAL</span>
               </div>
               <h3 class="text-lg font-black font-mono">/api/download</h3>
               <p class="text-slate-600 font-medium text-sm mt-1 mb-4" data-i18n="docs_ep_universal_desc">
@@ -405,7 +482,8 @@
                       <td class="p-2 text-[#0F172A]">url</td>
                       <td class="p-2 text-slate-500">string</td>
                       <td class="p-2 text-[#15803D]" data-i18n="docs_yes">YA</td>
-                      <td class="p-2 font-sans font-medium text-slate-700" data-i18n="docs_param_url_desc">Tautan URL publik postingan media (TikTok, IG, YT, Spotify, dll)</td>
+                      <td class="p-2 font-sans font-medium text-slate-700" data-i18n="docs_param_url_desc">Tautan URL
+                        publik postingan media (TikTok, IG, YT, Spotify, dll)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -415,12 +493,16 @@
             <!-- Dedicated Endpoints -->
             <div class="brutal-card-static bg-white p-5 sm:p-6">
               <div class="flex items-center justify-between mb-2.5">
-                <span class="bg-[#FACC15] border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] px-2.5 py-0.5 font-mono font-black text-xs">GET</span>
-                <span class="bg-slate-100 border border-[#0F172A] px-2 py-0.5 font-mono text-[11px] font-bold uppercase" data-i18n="docs_dedicated_tag">ENDPOINT SPESIFIK</span>
+                <span
+                  class="bg-[#FACC15] border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] px-2.5 py-0.5 font-mono font-black text-xs">GET</span>
+                <span class="bg-slate-100 border border-[#0F172A] px-2 py-0.5 font-mono text-[11px] font-bold uppercase"
+                  data-i18n="docs_dedicated_tag">ENDPOINT SPESIFIK</span>
               </div>
-              <h3 class="text-base font-black font-mono" data-i18n="docs_dedicated_title">Rute Dedicated Tiap Platform</h3>
-              <p class="text-slate-600 font-medium text-xs mt-1 mb-3" data-i18n="docs_dedicated_desc">Kamu juga bisa langsung menembak endpoint per platform:</p>
-              
+              <h3 class="text-base font-black font-mono" data-i18n="docs_dedicated_title">Rute Dedicated Tiap Platform
+              </h3>
+              <p class="text-slate-600 font-medium text-xs mt-1 mb-3" data-i18n="docs_dedicated_desc">Kamu juga bisa
+                langsung menembak endpoint per platform:</p>
+
               <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono text-[11px] font-bold">
                 <span class="p-1.5 bg-slate-50 border border-[#0F172A]">/api/tiktok/download</span>
                 <span class="p-1.5 bg-slate-50 border border-[#0F172A]">/api/meta/download</span>
@@ -440,11 +522,14 @@
             <!-- Health Check Endpoint -->
             <div class="brutal-card-static bg-white p-5 sm:p-6">
               <div class="flex items-center justify-between mb-2">
-                <span class="bg-white border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] px-2.5 py-0.5 font-mono font-black text-xs">GET</span>
-                <span class="bg-slate-100 border border-[#0F172A] px-2 py-0.5 font-mono text-[11px] font-bold uppercase" data-i18n="docs_health_tag">CEK SISTEM</span>
+                <span
+                  class="bg-white border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] px-2.5 py-0.5 font-mono font-black text-xs">GET</span>
+                <span class="bg-slate-100 border border-[#0F172A] px-2 py-0.5 font-mono text-[11px] font-bold uppercase"
+                  data-i18n="docs_health_tag">CEK SISTEM</span>
               </div>
               <h3 class="text-base font-black font-mono">/api/health</h3>
-              <p class="text-slate-600 font-medium text-xs mt-1" data-i18n="docs_health_desc">Cek status server, uptime, dan ketersediaan layanan.</p>
+              <p class="text-slate-600 font-medium text-xs mt-1" data-i18n="docs_health_desc">Cek status server, uptime,
+                dan ketersediaan layanan.</p>
             </div>
 
           </div>
@@ -453,21 +538,32 @@
           <div class="lg:col-span-5">
             <div class="border-2 border-[#0F172A] shadow-[4px_4px_0px_0px_#0F172A] bg-[#0F172A] sticky top-24">
               <!-- Code Tabs -->
-              <div class="p-2 bg-slate-800 border-b-2 border-[#0F172A] flex items-center justify-between flex-wrap gap-2">
+              <div
+                class="p-2 bg-slate-800 border-b-2 border-[#0F172A] flex items-center justify-between flex-wrap gap-2">
                 <div class="flex items-center gap-1">
-                  <button class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-[#0F172A] text-[#FACC15] border border-slate-700" data-lang="curl">cURL</button>
-                  <button class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-white text-[#0F172A] border border-slate-700 hover:bg-slate-100" data-lang="javascript">JavaScript</button>
-                  <button class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-white text-[#0F172A] border border-slate-700 hover:bg-slate-100" data-lang="python">Python</button>
-                  <button class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-white text-[#0F172A] border border-slate-700 hover:bg-slate-100" data-lang="php">PHP</button>
+                  <button
+                    class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-[#0F172A] text-[#FACC15] border border-slate-700"
+                    data-lang="curl">cURL</button>
+                  <button
+                    class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-white text-[#0F172A] border border-slate-700 hover:bg-slate-100"
+                    data-lang="javascript">JavaScript</button>
+                  <button
+                    class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-white text-[#0F172A] border border-slate-700 hover:bg-slate-100"
+                    data-lang="python">Python</button>
+                  <button
+                    class="code-tab-btn px-2.5 py-1 text-xs font-mono font-bold bg-white text-[#0F172A] border border-slate-700 hover:bg-slate-100"
+                    data-lang="php">PHP</button>
                 </div>
-                <button id="copy-code-btn" class="bg-white hover:bg-slate-100 px-2.5 py-1 border border-[#0F172A] text-xs font-mono font-bold flex items-center gap-1 active:translate-y-0.5">
+                <button id="copy-code-btn"
+                  class="bg-white hover:bg-slate-100 px-2.5 py-1 border border-[#0F172A] text-xs font-mono font-bold flex items-center gap-1 active:translate-y-0.5">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                   <span data-i18n="docs_copy_btn">Salin Kode</span>
                 </button>
               </div>
 
               <!-- Code Box -->
-              <pre class="p-4 text-xs font-mono text-white overflow-x-auto leading-relaxed selection:bg-[#FACC15] selection:text-black"><code id="code-snippet-box">curl -X GET "http://localhost:3000/api/download?url=https://www.tiktok.com/@tiktok/video/7106594312292453675" \
+              <pre
+                class="p-4 text-xs font-mono text-white overflow-x-auto leading-relaxed selection:bg-[#FACC15] selection:text-black"><code id="code-snippet-box">curl -X GET "http://localhost:3000/api/download?url=https://www.tiktok.com/@tiktok/video/7106594312292453675" \
   -H "Accept: application/json"</code></pre>
             </div>
           </div>
@@ -479,21 +575,24 @@
     <!-- Donation Section -->
     <section id="donation" class="py-16 border-t-2 border-[#0F172A] bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="brutal-badge bg-[#FACC15] px-3.5 py-1 text-xs mb-2.5" data-i18n="donate_badge">TRAKTIR KOPI ☕</span>
+          <span class="brutal-badge bg-[#FACC15] px-3.5 py-1 text-xs mb-2.5" data-i18n="donate_badge">TRAKTIR KOPI
+            ☕</span>
           <h2 class="text-2xl sm:text-4xl font-black uppercase" data-i18n="donate_title">Dukung Pengembang</h2>
           <p class="mt-2 text-slate-600 font-medium text-sm sm:text-base" data-i18n="donate_desc">
-            Layanan ini disediakan secara gratis dan open source. Jika proyek ini membantumu, pertimbangkan untuk mentraktir secangkir kopi!
+            Layanan ini disediakan secara gratis dan open source. Jika proyek ini membantumu, pertimbangkan untuk
+            mentraktir secangkir kopi!
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          
+
           <!-- Saweria Card -->
           <div class="brutal-card bg-slate-50 p-6 flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#FACC15] border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center font-black text-xl mb-3.5">
+              <div
+                class="w-12 h-12 bg-[#FACC15] border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center font-black text-xl mb-3.5">
                 S
               </div>
               <h3 class="text-xl font-black uppercase">Saweria</h3>
@@ -501,7 +600,8 @@
                 Dukung via QRIS, GoPay, OVO, Dana
               </p>
             </div>
-            <a href="https://saweria.co/diaw14" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#FACC15] text-[#0F172A] hover:bg-yellow-300 w-full py-2.5 text-xs font-bold">
+            <a href="https://saweria.co/diaw14" target="_blank" rel="noopener noreferrer"
+              class="brutal-btn bg-[#FACC15] text-[#0F172A] hover:bg-yellow-300 w-full py-2.5 text-xs font-bold">
               <span data-i18n="donate_btn">Donasi Sekarang</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
             </a>
@@ -510,7 +610,8 @@
           <!-- BagiBagi Card -->
           <div class="brutal-card bg-slate-50 p-6 flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#22C55E] border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center font-black text-xl mb-3.5">
+              <div
+                class="w-12 h-12 bg-[#22C55E] border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center font-black text-xl mb-3.5">
                 B
               </div>
               <h3 class="text-xl font-black uppercase">BagiBagi</h3>
@@ -518,7 +619,8 @@
                 Dukungan lokal fleksibel & cepat
               </p>
             </div>
-            <a href="https://bagibagi.co/Diaww" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#22C55E] text-[#0F172A] hover:bg-green-400 w-full py-2.5 text-xs font-bold">
+            <a href="https://bagibagi.co/Diaww" target="_blank" rel="noopener noreferrer"
+              class="brutal-btn bg-[#22C55E] text-[#0F172A] hover:bg-green-400 w-full py-2.5 text-xs font-bold">
               <span data-i18n="donate_btn">Donasi Sekarang</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
             </a>
@@ -527,7 +629,8 @@
           <!-- Ko-fi Card -->
           <div class="brutal-card bg-slate-50 p-6 flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-white border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center font-black text-xl mb-3.5">
+              <div
+                class="w-12 h-12 bg-white border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] flex items-center justify-center font-black text-xl mb-3.5">
                 <i data-lucide="coffee" class="w-6 h-6 text-[#0F172A]"></i>
               </div>
               <h3 class="text-xl font-black uppercase">Ko-fi</h3>
@@ -535,7 +638,8 @@
                 Dukungan internasional via PayPal / Kartu
               </p>
             </div>
-            <a href="https://ko-fi.com/diaww14" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white text-[#0F172A] hover:bg-slate-100 w-full py-2.5 text-xs font-bold">
+            <a href="https://ko-fi.com/diaww14" target="_blank" rel="noopener noreferrer"
+              class="brutal-btn bg-white text-[#0F172A] hover:bg-slate-100 w-full py-2.5 text-xs font-bold">
               <span data-i18n="donate_btn">Donasi Sekarang</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
             </a>
@@ -548,14 +652,17 @@
 
   <!-- Footer -->
   <footer class="border-t-2 border-[#0F172A] bg-white text-[#0F172A] py-8 font-mono">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-bold">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-bold">
       <div class="flex items-center gap-2">
-        <span class="bg-[#FACC15] text-[#0F172A] px-2 py-0.5 border border-[#0F172A] font-black uppercase">Diaww Media API</span>
+        <span class="bg-[#FACC15] text-[#0F172A] px-2 py-0.5 border border-[#0F172A] font-black uppercase">Diaww Media
+          API</span>
         <span>•</span>
         <span data-i18n="footer_text">Dibuat dengan ❤️ oleh Diaww. Terbuka untuk kontribusi komunitas di GitHub.</span>
       </div>
       <div class="flex items-center gap-4">
-        <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-black hover:underline uppercase">GitHub Repository</a>
+        <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer"
+          class="text-slate-700 hover:text-black hover:underline uppercase">GitHub Repository</a>
         <span>•</span>
         <span class="text-slate-500">MIT LICENSE</span>
       </div>
@@ -565,4 +672,5 @@
   <!-- App Script -->
   <script src="/js/app.js"></script>
 </body>
+
 </html>
