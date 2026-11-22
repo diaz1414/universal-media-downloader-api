@@ -241,7 +241,7 @@ function extractNormalizedMedia(json) {
   // 1. Direct downloads array
   if (Array.isArray(data.downloads)) {
     data.downloads.forEach((d, idx) => {
-      const displayLabel = d.title 
+      const displayLabel = d.title
         ? `${d.quality || 'Download'}: ${d.title.length > 22 ? d.title.slice(0, 20) + '...' : d.title}`
         : (d.quality || d.text || `Download File ${idx + 1}`);
       downloads.push({
