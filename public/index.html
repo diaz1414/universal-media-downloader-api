@@ -67,65 +67,65 @@
   <!-- Navbar -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-[#0F172A]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 sm:h-20">
 
         <!-- Brand Logo -->
-        <a href="#" class="flex items-center gap-3 group">
+        <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
           <div
-            class="w-11 h-11 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] rounded-lg overflow-hidden bg-[#FACC15] p-0.5 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform">
+            class="w-10 h-10 sm:w-11 sm:h-11 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] rounded-lg overflow-hidden bg-[#FACC15] p-0.5 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform">
             <img src="/img/logo.svg" alt="Diaww Logo" class="w-full h-full object-contain">
           </div>
           <div class="flex flex-col">
-            <span class="font-black text-xl tracking-tighter uppercase leading-none">
+            <span class="font-black text-lg sm:text-xl tracking-tight uppercase leading-none">
               Diaww<span
-                class="bg-[#22C55E] text-[#0F172A] px-1.5 py-0.5 ml-1 border-2 border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] text-xs font-mono">API</span>
+                class="bg-[#22C55E] text-[#0F172A] px-1.5 py-0.5 ml-1 border border-[#0F172A] shadow-[1.5px_1.5px_0px_0px_#0F172A] text-[11px] font-mono">API</span>
             </span>
-            <span class="text-[10px] font-mono font-bold text-slate-500 tracking-wider mt-0.5">MEDIA ENGINE v1.0</span>
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-slate-500 tracking-wider mt-0.5">MEDIA ENGINE v1.0</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center gap-5 text-sm font-bold uppercase">
+        <!-- Desktop Navigation Links in Brutalist Capsule -->
+        <nav class="hidden lg:flex items-center gap-1 bg-slate-50 p-1 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] rounded-lg">
           <a href="#home"
-            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            class="px-3 py-1.5 text-xs font-bold uppercase rounded-md hover:bg-[#FACC15] hover:text-[#0F172A] transition-all"
             data-i18n="nav_home">Beranda</a>
           <a href="#platforms"
-            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            class="px-3 py-1.5 text-xs font-bold uppercase rounded-md hover:bg-[#FACC15] hover:text-[#0F172A] transition-all"
             data-i18n="nav_platforms">Platform</a>
           <a href="#features"
-            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            class="px-3 py-1.5 text-xs font-bold uppercase rounded-md hover:bg-[#FACC15] hover:text-[#0F172A] transition-all"
             data-i18n="nav_features">Fitur</a>
           <a href="#downloader"
-            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
-            data-i18n="nav_downloader">Pengunduh Web</a>
+            class="px-3 py-1.5 text-xs font-bold uppercase rounded-md hover:bg-[#FACC15] hover:text-[#0F172A] transition-all"
+            data-i18n="nav_downloader">Pengunduh</a>
           <a href="#docs"
-            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            class="px-3 py-1.5 text-xs font-bold uppercase rounded-md hover:bg-[#FACC15] hover:text-[#0F172A] transition-all"
             data-i18n="nav_docs">Dokumentasi</a>
           <a href="#donation"
-            class="hover:bg-[#FACC15] px-3 py-1.5 border-2 border-transparent hover:border-[#0F172A] hover:shadow-[2px_2px_0px_0px_#0F172A] transition-all"
+            class="px-3 py-1.5 text-xs font-bold uppercase rounded-md hover:bg-[#FACC15] hover:text-[#0F172A] transition-all"
             data-i18n="nav_donate">Donasi</a>
         </nav>
 
         <!-- Right Side CTA & Language Toggle -->
-        <div class="hidden md:flex items-center gap-3">
+        <div class="hidden lg:flex items-center gap-2.5 shrink-0">
           <!-- Language Button -->
-          <button id="lang-btn" class="brutal-btn bg-white hover:bg-[#FACC15] px-3.5 py-1.5 text-xs">
-            <i data-lucide="languages" class="w-4 h-4 text-[#0F172A]"></i>
-            <span id="lang-label">ID (Bahasa)</span>
+          <button id="lang-btn" class="brutal-btn bg-white hover:bg-[#FACC15] px-3 py-1.5 text-xs font-mono font-bold">
+            <i data-lucide="languages" class="w-3.5 h-3.5 text-[#0F172A]"></i>
+            <span id="lang-label">ID</span>
           </button>
 
           <!-- GitHub Source -->
           <a href="https://github.com/diaz1414/universal-media-downloader-api" target="_blank" rel="noopener noreferrer"
-            class="brutal-btn bg-[#0F172A] text-white hover:bg-slate-800 px-3.5 py-1.5 text-xs">
-            <i data-lucide="github" class="w-4 h-4 text-[#FACC15]"></i>
-            <span>GitHub</span>
+            class="brutal-btn bg-[#0F172A] text-white hover:bg-slate-800 px-3.5 py-1.5 text-xs font-mono font-bold">
+            <i data-lucide="github" class="w-3.5 h-3.5 text-[#FACC15]"></i>
+            <span>GITHUB</span>
           </a>
         </div>
 
         <!-- Mobile Hamburger Button -->
-        <div class="flex items-center gap-2 md:hidden">
+        <div class="flex items-center gap-2 lg:hidden">
           <button id="burger-btn"
-            class="w-10 h-10 bg-[#FACC15] border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center justify-center font-bold text-[#0F172A] focus:outline-none">
+            class="w-10 h-10 bg-[#FACC15] border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] flex items-center justify-center font-bold text-[#0F172A] focus:outline-none cursor-pointer">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -133,25 +133,25 @@
     </div>
 
     <!-- Mobile Drawer Menu (Neo-Brutalist) -->
-    <div id="mobile-menu" class="hidden md:hidden border-t-2 border-[#0F172A] bg-white p-5 space-y-3 shadow-lg">
-      <nav class="flex flex-col space-y-2.5 font-bold uppercase text-base">
+    <div id="mobile-menu" class="hidden lg:hidden border-t-2 border-[#0F172A] bg-white p-5 space-y-3 shadow-lg">
+      <nav class="flex flex-col space-y-2 font-bold uppercase text-sm">
         <a href="#home"
-          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          class="bg-slate-50 p-2.5 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] active:translate-x-1"
           data-i18n="nav_home">Beranda</a>
         <a href="#platforms"
-          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          class="bg-slate-50 p-2.5 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] active:translate-x-1"
           data-i18n="nav_platforms">Platform</a>
         <a href="#features"
-          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          class="bg-slate-50 p-2.5 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] active:translate-x-1"
           data-i18n="nav_features">Fitur</a>
         <a href="#downloader"
-          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
-          data-i18n="nav_downloader">Pengunduh Web</a>
+          class="bg-slate-50 p-2.5 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] active:translate-x-1"
+          data-i18n="nav_downloader">Pengunduh</a>
         <a href="#docs"
-          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          class="bg-slate-50 p-2.5 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] active:translate-x-1"
           data-i18n="nav_docs">Dokumentasi</a>
         <a href="#donation"
-          class="bg-slate-50 p-3 border-2 border-[#0F172A] shadow-[2.5px_2.5px_0px_0px_#0F172A] active:translate-x-1"
+          class="bg-slate-50 p-2.5 border-2 border-[#0F172A] shadow-[2px_2px_0px_0px_#0F172A] active:translate-x-1"
           data-i18n="nav_donate">Donasi</a>
       </nav>
       <div class="pt-3 border-t-2 border-slate-200 flex items-center justify-between gap-3">

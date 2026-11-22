@@ -8,7 +8,7 @@ const i18nData = {
     nav_home: "Beranda",
     nav_platforms: "Platform",
     nav_features: "Fitur",
-    nav_downloader: "Pengunduh Web",
+    nav_downloader: "Pengunduh",
     nav_docs: "Dokumentasi",
     nav_donate: "Donasi",
     nav_switch_lang: "Ganti Bahasa",
@@ -121,7 +121,7 @@ const i18nData = {
     nav_home: "Home",
     nav_platforms: "Platforms",
     nav_features: "Features",
-    nav_downloader: "Web Downloader",
+    nav_downloader: "Downloader",
     nav_docs: "Docs",
     nav_donate: "Donate",
     nav_switch_lang: "Switch Language",
@@ -249,7 +249,7 @@ function setLanguage(lang) {
 
   const langLabel = document.getElementById('lang-label');
   if (langLabel) {
-    langLabel.textContent = lang === 'id' ? 'ID (Bahasa)' : 'EN (English)';
+    langLabel.textContent = lang === 'id' ? 'ID' : 'EN';
   }
 
   const copyBtn = document.getElementById('copy-code-btn');
