@@ -589,24 +589,54 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Code Snippet Tabs
+  // Code Snippet Tabs & Auto Dynamic Domain / Base URL
   const codeTabs = document.querySelectorAll('.code-tab-btn');
   const codeBlock = document.getElementById('code-snippet-box');
+  const docsBaseUrlEl = document.getElementById('docs-base-url');
+  const copyBaseUrlBtn = document.getElementById('copy-base-url-btn');
 
-  const snippets = {
-    curl: `curl -X GET "http://localhost:3000/api/download?url=https://www.tiktok.com/@tiktok/video/7106594312292453675" \\
+  const getBaseUrl = () => {
+    if (typeof window !== 'undefined' && window.location && window.location.origin) {
+      return window.location.origin;
+    }
+    return 'http://localhost:3000';
+  };
+
+  const dynamicBaseUrl = getBaseUrl();
+
+  // Update Base URL tag in docs if present
+  if (docsBaseUrlEl) {
+    docsBaseUrlEl.textContent = dynamicBaseUrl;
+  }
+  if (copyBaseUrlBtn) {
+    copyBaseUrlBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(dynamicBaseUrl).then(() => {
+        copyBaseUrlBtn.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>';
+        if (window.lucide) window.lucide.createIcons();
+        setTimeout(() => {
+          copyBaseUrlBtn.innerHTML = '<i data-lucide="copy" class="w-3.5 h-3.5"></i>';
+          if (window.lucide) window.lucide.createIcons();
+        }, 2000);
+      });
+    });
+  }
+
+  const getSnippets = () => {
+    const base = getBaseUrl();
+    return {
+      curl: `curl -X GET "${base}/api/download?url=https://www.tiktok.com/@tiktok/video/7106594312292453675" \\
   -H "Accept: application/json"`,
-    javascript: `// JavaScript (Fetch API)
+      javascript: `// JavaScript (Fetch API)
 const targetUrl = "https://www.tiktok.com/@tiktok/video/7106594312292453675";
 
-fetch(\`/api/download?url=\${encodeURIComponent(targetUrl)}\`)
+fetch(\`${base}/api/download?url=\${encodeURIComponent(targetUrl)}\`)
   .then(res => res.json())
   .then(data => console.log(data))
   .catch(err => console.error(err));`,
-    python: `# Python 3 (Requests)
+      python: `# Python 3 (Requests)
 import requests
 
-url = "http://localhost:3000/api/download"
+url = "${base}/api/download"
 params = {
     "url": "https://www.tiktok.com/@tiktok/video/7106594312292453675"
 }
@@ -614,17 +644,24 @@ params = {
 response = requests.get(url, params=params)
 data = response.json()
 print(data)`,
-    php: `<?php
+      php: `<?php
 // PHP cURL
 $targetUrl = urlencode("https://www.tiktok.com/@tiktok/video/7106594312292453675");
-$endpoint = "http://localhost:3000/api/download?url=" . $targetUrl;
+$endpoint = "${base}/api/download?url=" . $targetUrl;
 
 $response = file_get_contents($endpoint);
 $data = json_decode($response, true);
 
 print_r($data);
 ?>`
+    };
   };
+
+  // Set initial snippet with auto-detected domain
+  let currentSnippets = getSnippets();
+  if (codeBlock) {
+    codeBlock.textContent = currentSnippets.curl;
+  }
 
   codeTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
@@ -637,8 +674,9 @@ print_r($data);
       tab.classList.add('bg-[#0F172A]', 'text-[#FACC15]');
 
       const lang = tab.getAttribute('data-lang');
-      if (codeBlock && snippets[lang]) {
-        codeBlock.textContent = snippets[lang];
+      currentSnippets = getSnippets();
+      if (codeBlock && currentSnippets[lang]) {
+        codeBlock.textContent = currentSnippets[lang];
       }
     });
   });
