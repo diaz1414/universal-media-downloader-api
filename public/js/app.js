@@ -6,6 +6,7 @@ const i18nData = {
 
     // Navbar
     nav_home: "Beranda",
+    nav_platforms: "Platform",
     nav_features: "Fitur",
     nav_downloader: "Pengunduh Web",
     nav_docs: "Dokumentasi",
@@ -38,6 +39,26 @@ const i18nData = {
     feat_3_title: "Performa Kilat",
     feat_3_desc: "Hasil unduhan instan dan respons format JSON yang ringan, clean, serta dioptimalkan untuk latensi rendah.",
     feat_3_footer: "18+ CONTROLLER SPESIFIK",
+
+    // Supported Platforms
+    plat_badge: "18+ PLATFORM DIDUKUNG",
+    plat_title: "Daftar Platform & Format Media",
+    plat_desc: "Satu mesin terpadu untuk mengunduh video HD tanpa watermark, audio musik 320kbps, galeri foto, hingga direct high-speed cloud download.",
+    plat_tt_desc: "Video kualitas HD tanpa watermark, video dengan watermark, audio / backsound original MP3, dan slide foto.",
+    plat_ig_desc: "Instagram Reels, Feed Video, IGTV, foto tunggal, dan carousel multi-foto dalam resolusi tertinggi (1080p).",
+    plat_yt_desc: "YouTube Shorts dan Video publik reguler dengan opsi resolusi 1080p, 720p, 480p, 360p, serta ekstraksi audio MP3.",
+    plat_x_desc: "Video tweet resolusi tinggi (1080p, 720p, 480p, 360p) dengan link langsung CDN Twitter, plus animasi GIF.",
+    plat_tb_desc: "Bypass batasan speed limit dan login TeraBox. Mengunduh video (MP4/MKV), arsip ZIP/RAR, dokumen PDF, hingga APK berkecepatan tinggi.",
+    plat_sp_desc: "Ekstraksi stream audio lagu Spotify dengan bitrate jernih (MP3) dilengkapi metadata artis, album, dan cover art resmi.",
+    plat_fb_desc: "Facebook Public Watch, Reels, dan video feed publik dengan pilihan kualitas resolusi HD dan SD.",
+    plat_th_desc: "Postingan video dan gambar resolusi penuh dari Threads (Meta) tanpa kompresi visual.",
+    plat_pin_desc: "Video Pins Full HD dan gambar/foto dengan resolusi maksimal langsung dari link pin.it atau pinterest.com.",
+    plat_rd_desc: "Video Reddit publik dengan audio yang sudah digabungkan secara otomatis (bukan video bisu), dan galeri gambar.",
+    plat_cc_desc: "Template video CapCut tanpa watermark pratinjau dan unduh lagu latar/musik template secara terpisah.",
+    plat_sc_desc: "Audio streaming SoundCloud kualitas tinggi dengan metadata judul, artis, dan gambar artwork lagu.",
+    plat_snap_desc: "Unduh video publik Snapchat Spotlight dan cerita publik dengan sekali klik.",
+    plat_dy_desc: "Mendukung video pendek Douyin (TikTok versi China) dan Kuaishou (Kwai) kualitas HD tanpa watermark.",
+    plat_others_desc: "Dukungan lengkap untuk Bluesky Social, video edukasi LinkedIn, streaming Dailymotion, dan konten multimedia Tumblr.",
 
     // Downloader & Interactive Tester
     tester_badge: "WEB DOWNLOADER & API TESTER",
@@ -98,6 +119,7 @@ const i18nData = {
 
     // Navbar
     nav_home: "Home",
+    nav_platforms: "Platforms",
     nav_features: "Features",
     nav_downloader: "Web Downloader",
     nav_docs: "Docs",
@@ -130,6 +152,26 @@ const i18nData = {
     feat_3_title: "Lightning Fast",
     feat_3_desc: "Instant file delivery and ultra-clean, lightweight JSON responses tuned for minimal network latency.",
     feat_3_footer: "18+ DEDICATED CONTROLLERS",
+
+    // Supported Platforms
+    plat_badge: "18+ SUPPORTED PLATFORMS",
+    plat_title: "Supported Platforms & Media Types",
+    plat_desc: "A unified engine to download watermark-free HD videos, 320kbps MP3 audio, photo carousels, and high-speed direct cloud files.",
+    plat_tt_desc: "HD video without watermark, watermarked video, original MP3 audio/soundtrack, and photo slideshows.",
+    plat_ig_desc: "Instagram Reels, Feed Video, IGTV, single photos, and high-resolution multi-photo carousels (up to 1080p).",
+    plat_yt_desc: "YouTube Shorts and regular public videos with 1080p, 720p, 480p, and 360p resolution options, plus MP3 audio extraction.",
+    plat_x_desc: "High-resolution tweet videos (1080p, 720p, 480p, 360p) with direct Twitter CDN links, plus animated GIFs.",
+    plat_tb_desc: "Bypass TeraBox speed limits and login requirements. High-speed direct downloads for MP4/MKV video, ZIP/RAR, PDF, and APKs.",
+    plat_sp_desc: "Extract Spotify track audio streams in crystal-clear bitrate (MP3) complete with artist metadata, album name, and official cover art.",
+    plat_fb_desc: "Facebook Public Watch, Reels, and public timeline videos with HD and SD quality choices.",
+    plat_th_desc: "Full-resolution videos and photo galleries from Threads (Meta) without visual compression.",
+    plat_pin_desc: "Full HD Video Pins and maximum resolution artwork images directly from pin.it or pinterest.com links.",
+    plat_rd_desc: "Public Reddit videos with audio automatically merged (no mute video), plus image posts and GIFs.",
+    plat_cc_desc: "Watermark-free CapCut template preview videos and standalone background music extraction.",
+    plat_sc_desc: "High-quality SoundCloud audio streaming tracks with title, artist metadata, and cover artwork.",
+    plat_snap_desc: "Download public Snapchat Spotlight videos and public story posts with a single click.",
+    plat_dy_desc: "Supports short videos from Douyin (Chinese TikTok) and Kuaishou (Kwai) in HD with no watermark.",
+    plat_others_desc: "Comprehensive support for Bluesky Social, LinkedIn video feed, Dailymotion streaming, and Tumblr multimedia.",
 
     // Downloader & Interactive Tester
     tester_badge: "WEB DOWNLOADER & API TESTER",
