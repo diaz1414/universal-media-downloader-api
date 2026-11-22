@@ -11,6 +11,11 @@
   --brutal-bg: #F8FAFC;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
 body {
   background-color: var(--brutal-bg);
   color: var(--brutal-black);
