@@ -133,8 +133,8 @@ curl -X GET "http://localhost:3000/api/health"
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/diaww-media-api.git
-cd diaww-media-api
+git clone https://github.com/diaz1414/universal-media-downloader-api.git
+cd universal-media-downloader-api
 ```
 
 ### 2. Install Dependencies
@@ -218,8 +218,8 @@ print_r($data);
 
 ### Deploying on a Linux VPS (Ubuntu / Debian + PM2)
 ```bash
-git clone https://github.com/your-username/diaww-media-api.git
-cd diaww-media-api
+git clone https://github.com/diaz1414/universal-media-downloader-api.git
+cd universal-media-downloader-api
 npm install
 npm install -g pm2
 pm2 start server.js --name "diaww-media-api"

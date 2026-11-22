@@ -1,8 +1,16 @@
 {
-  "name": "diaww-downloader-api",
+  "name": "universal-media-downloader-api",
   "version": "1.0.0",
-  "description": "Diaww Universal Media Downloader REST API & Interactive Documentation Portal",
+  "description": "Universal Media Downloader REST API & Interactive Neo-Brutalism Web Portal by Diaww",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaz1414/universal-media-downloader-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diaz1414/universal-media-downloader-api/issues"
+  },
+  "homepage": "https://github.com/diaz1414/universal-media-downloader-api#readme",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js"
